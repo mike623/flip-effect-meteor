@@ -1,0 +1,44 @@
+<head>
+  <title>flip</title>
+
+</head>
+
+<body>
+
+
+  <div id="flip" class="container">
+    {{#each pages }}
+      {{ > page}}
+    {{/each}}
+  </div>
+
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+
+<template name="page">
+  <div class="page" data-dir="right" style="z-index:{{this}}" >
+		<div class="front">
+			<div class="outer">
+				<div class="content" style="">
+
+          <!-- <img class="nodejs" src="https://deversoy.files.wordpress.com/2015/06/nodejs-logo.png" alt=""> -->
+          <iframe width="420" height="315" src="https://www.youtube.com/embed/vg2MEgYt5FQ" frameborder="0" allowfullscreen></iframe>
+
+				</div>
+			</div>
+		</div>
+		<div class="back">
+			<div class="outer">
+				<div class="content" style="">
+					<!-- <img class="nodejs" src="https://deversoy.files.wordpress.com/2015/06/nodejs-logo.png" alt=""> -->
+          <iframe width="420" height="315" src="https://www.youtube.com/embed/vg2MEgYt5FQ" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

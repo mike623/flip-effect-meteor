@@ -1,0 +1,14 @@
+.page{
+  transform: rotateY(0deg);
+  left: 250px;
+}
+
+.nodejs{
+  display: block;
+  left: 50px;
+}
+
+.content{
+  width: 100vw;
+  left: -250px;
+}
